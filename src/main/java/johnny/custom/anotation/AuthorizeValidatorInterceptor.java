@@ -23,6 +23,7 @@ import org.springframework.web.context.request.ServletRequestAttributes;
 public class AuthorizeValidatorInterceptor {
 
 
+    
     @Before(value = "@annotation(johnny.custom.anotation.AuthorizeValidator)  && @annotation(roles)")
     public void before(JoinPoint caller, AuthorizeValidator roles) {
 

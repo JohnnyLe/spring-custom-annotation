@@ -30,6 +30,17 @@ public class DataRepository {
         return null;
     }
     
+    
+    public static User getAdmin() {
+        User admin = new User();
+        admin.setId(1);
+        admin.setUserName("admin");
+        admin.setRole("ADMIN");
+        admin.setToken("admin-xxx-xxx");
+
+        return admin;
+    }
+    
     private static void initData(){
         users=new ArrayList<User>();
         
